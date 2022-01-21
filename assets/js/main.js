@@ -143,22 +143,52 @@ function calcprix(btn) {
     
 }
 
+// Pour calculer le prix et les frais de port
+function calcprix(btn) {
+    pricet.price = pricet.price + btn.price;
+    // console.log(pricet.price);
+
+    if (pricet.price >= 10) {
+        pricefp.price += 0.5;
+        pricefp.textContent = 0;
+        pricet.textContent = pricet.price;
+    }
+    else{
+        pricefp.price +=  0.50;
+        pricefp.textContent = pricefp.price;
+        pricet.textContent = pricet.price + pricefp.price;
+    }
+    
+}
+
+// Supprimer les prix quand on supprime un produit
+function supprix(product) {
+    product = productList.find(i => i.id == product)
+    // console.log(product.price);
+    pricet.price = pricet.price - product.price;
+    // console.log(pricet.price);
+
+    if (pricet.price >= 10) {
+        pricefp.price -= 0.5;
+        pricefp.textContent = 0;
+        pricet.textContent = pricet.price;
+    }
+    else{
+        pricefp.price = pricefp.price - 0.50;
+        pricefp.textContent = pricefp.price;
+        pricet.textContent = pricet.price + pricefp.price;
+    }
+}
+
 function deleteProduct(id){
     const product = document.querySelector(`#product-${id}`)
-    // supprix(product)
+    supprix(product)
     product.remove()
     // console.log(product);
 
 }
 
-// // Supprimer les prix quand on supprime un produit
-// function supprix(product) {
-//     product = productList.find(i => i.id == product)
-//     // console.log(product.price);
-//     pricet.price = pricet.price - product.price;
-//     // console.log(pricet.price);
-//     pricet.textContent = pricet.price;
-// }
+
 
 // // Caculer la quantité 
 // function calcquantity(){
