@@ -146,7 +146,7 @@ function calcprix(btn) {
 function deleteProduct(id){
     const product = document.querySelector(`#product-${id}`)
     product.remove()
-    console.log(product);
+    // console.log(product);
 
 }
 
