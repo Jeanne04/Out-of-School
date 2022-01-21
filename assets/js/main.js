@@ -109,7 +109,7 @@ function createtable(product){
     tr.append(tdtrash)
     const trash = document.createElement("input")
     trash.type = "button"
-    trash.value = "Supp"
+    trash.value = "Supprimer"
     trash.setAttribute('onClick', `deleteProduct(${product.id})`)
     tdtrash.append(trash)
 
@@ -146,7 +146,18 @@ function calcprix(btn) {
 function deleteProduct(id){
     const product = document.querySelector(`#product-${id}`)
     product.remove()
+    supprix(product)
     // console.log(product);
+
+}
+
+// Supprimer les prix quand on supprime un produit
+function supprix(product) {
+    product = productList.find(i => i.id == product)
+    // console.log(product.price);
+    pricet.price = pricet.price - product.price;
+    // console.log(pricet.price);
+    pricet.textContent = pricet.price;
 
 }
 
