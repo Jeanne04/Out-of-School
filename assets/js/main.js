@@ -125,23 +125,6 @@ function addProduct(btn){
     // console.log(btn);
 }
 
-// Calculer le prix 
-function calcprix(btn) {
-    pricet.price = pricet.price + btn.price;
-    // console.log(pricet.price);
-
-    if (pricet.price >= 10) {
-        pricefp.price = 0;
-        pricefp.textContent = pricefp.price;
-        pricet.textContent = pricet.price;
-    }
-    else{
-        pricefp.price = pricefp.price + 0.50;
-        pricefp.textContent = pricefp.price;
-        pricet.textContent = pricet.price + pricefp.price;
-    }
-    
-}
 
 // Pour calculer le prix et les frais de port
 function calcprix(btn) {
@@ -182,8 +165,11 @@ function supprix(product) {
 
 function deleteProduct(id){
     const product = document.querySelector(`#product-${id}`)
-    supprix(product)
     product.remove()
+    supprix(product)
+    
+    
+    
     // console.log(product);
 
 }
