@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.3/dist/paper.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/main.js" defer></script>
+    <title>OrigamiShop!</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="border split-nav">
+            <div class="nav-brand">
+                <h3><a href="#">OrigamiShop!</a></h3>
+            </div>
+            <div class="right">
+                <ul class="inline">
+                    <label class="paper-btn margin" for="modal-1"></label>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <section>
+            <div class="paper container container-sm margin-bottom-large">
+                <div class="description">
+                    <p>Bienvenue sur Origami Shop !</p>
+                    <p>Sur ce site vous pourrez y retrouvez plusieurs types d’origami,
+                        comme des animaux, des objets, des fleur etc….</p>
+                    <p>Ces origamis sont en ventent a des prix abordables.</p>
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <!-- <div class="card" style="width: 20rem;">
+                <img class="image-bottom" src="https://unsplash.it/550/250" alt="Card example image">
+                <div class="card-body">
+                    <h4 class="card-title">La Grue</h4>
+                    <p class="card-text">2,00€</p>
+                    <button>Ajouter au panier</button>
+                </div>
+            </div> -->
+        </section>
+        <section id="modal">
+            <div class="row flex-spaces child-borders">
+            </div>
+            <input class="modal-state" id="modal-1" type="checkbox">
+            <div class="modal">
+                <label class="modal-bg" for="modal-1"></label>
+                <div class="modal-body">
+                    <label class="btn-close" for="modal-1">X</label>
+                    <h4 class="modal-title"> Panier</h4>
+                    <h5 class="modal-subtitle"></h5>
+                    <h5 class="modal-subtitle"></h5>
+                    <p class="modal-text" id="modal-p">Produit :</p>
+                    <table>
+                        <tbody>
+                            <!-- <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                    <p class="modal-text frais-p">Frais de port : </p>
+
+                    <div class="paper container margin-bottom-large container1"></div>
+
+                    <p class="modal-text price-total">Prix : </p>
+                    <button class="btn-command">Commander</button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="sm-3 col border border-5 border-primary container">
+            <p>Copyright © OrigamiShop! | 2022</p>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>

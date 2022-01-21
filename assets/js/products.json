@@ -1,0 +1,63 @@
+[
+    {
+        "id" : 1, 
+        "name" : "La Grue",
+        "price" : 5.06 ,
+        "image":"./assets/img/Draco-Origami.JPG"
+    },
+    {
+        "id" : 2, 
+        "name" : "Le Shuriken",
+        "price" : 4.80,
+        "image" : "./assets/img/Shuriken.JPG"
+    },
+    {
+        "id" : 3, 
+        "name" : "La Cocotte",
+        "price" : 2.10,
+        "image" : "./assets/img/Cocotte.JPG"
+    },
+    {
+        "id" : 4, 
+        "name" : "Le Renard",
+        "price" : 1.00,
+        "image" : "./assets/img/renard.JPG"
+    },
+    {
+        "id" : 5, 
+        "name" : "L'oiseau",
+        "price" : 3.50,
+        "image" : "./assets/img/Oiseau.JPG"
+    },
+    {
+        "id" : 6, 
+        "name" : "Le Bateau",
+        "price" : 1.40,
+        "image" : "./assets/img/Bateau.JPG"
+    },
+    {
+        "id" : 7, 
+        "name" : "L'Avion",
+        "price" : 0.70,
+        "image" : "./assets/img/Avion.JPG"
+    },
+    {
+        "id" : 8, 
+        "name" : "Le Coeur",
+        "price" : 1.70,
+        "image" : "./assets/img/Coeur.JPG"
+    },
+    {
+        "id" : 9, 
+        "name" : "Le Papillon",
+        "price" : 3.00,
+        "image" : "./assets/img/Papillon.JPG"
+    },
+    {
+        "id" : 10, 
+        "name" : "Le Lys",
+        "price" : 6.00, 
+        "image" : "./assets/img/Lys.JPG"
+    }
+
+]

@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    margin-bottom: 25px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5CAFE7;
+}
+
+h3 a{
+    color:#FBFBFB !important;
+}
+
+#products{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    grid-gap: 1em;
+}
+
+.card{
+    grid-column: span 6;
+    background-color: #82CEF9;
+    max-width: 100%;
+    height: 100%;
+}
+.container{
+    background-color:  #82CEF9;
+}
+
+.description{
+    color:#FBFBFB ;
+}
+button,.paper-btn {
+    background-color: #FF679D;
+    color: #FBFBFB;
+    padding: 4px;
+}
+
+.card-title{
+    padding: 3px;
+    text-align: center;
+    color: #FFE361;
+}
+
+.card-text{
+    padding: 1px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.btn-command{
+    display: flex;
+    align-items: center;
+}
+
+div .modal-body{
+    background-color:  #5CAFE7 !important;
+    color:#FBFBFB !important;
+}
+
+tbody{
+    background-color:  #82CEF9;
+}
+
+label img{
+    border: none !important;
+
+}
+
+footer div{
+    background-color: #5CAFE7;
+    color: #FBFBFB !important;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.img-product{
+    height: 50px;
+    width: 50px;
+}
+
+.name-p{
+    font-size: 25px;
+    
+}
+
+.price-p{
+    font-size: 20px;
+}
+
+.input-qt{
+    width: 60px;
+}
+
+.container{
+    background-color:  #82CEF9;
+    width: 100%;
+}
+
+.container1{
+    background-color:  #82CEF9;
+    width: 100%;
+    height: 1px;
+    padding-bottom: 1px;
+}
+
+.price-total{
+    padding-top: 2px!important;
+}
+
+
+#modal{
+    z-index: 100000000;
+    position: fixed;
+}
+
+@media screen and (min-width: 900px) {
+    .card{
+        grid-column: span 3;
+        height: 100%;
+        padding-bottom: 15px;
+    }
+
+    .card-title{
+        padding-top: 15px;
+    }
+
+    .card-text{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #modal{
+        z-index: 100000000;
+        margin-top: 10px;
+    }
+
+}
