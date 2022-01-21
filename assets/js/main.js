@@ -145,22 +145,20 @@ function calcprix(btn) {
 
 function deleteProduct(id){
     const product = document.querySelector(`#product-${id}`)
-    
-    supprix(product)
+    // supprix(product)
     product.remove()
     // console.log(product);
 
 }
 
-// Supprimer les prix quand on supprime un produit
-function supprix(product) {
-    product = productList.find(i => i.id == product)
-    // console.log(product.price);
-    pricet.price = pricet.price - product.price;
-    // console.log(pricet.price);
-    pricet.textContent = pricet.price;
-
-}
+// // Supprimer les prix quand on supprime un produit
+// function supprix(product) {
+//     product = productList.find(i => i.id == product)
+//     // console.log(product.price);
+//     pricet.price = pricet.price - product.price;
+//     // console.log(pricet.price);
+//     pricet.textContent = pricet.price;
+// }
 
 // // Caculer la quantité 
 // function calcquantity(){
