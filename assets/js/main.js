@@ -1,6 +1,7 @@
+// Tableau pour les produits
 let productList=[]
 
-// 
+// On appelle le fichier product.json poru recupéré les données
 fetch("./assets/js/products.json")
     .then((res) => res.json())
     .then((res) => {
@@ -12,6 +13,7 @@ fetch("./assets/js/products.json")
 });
 // console.log(productList);
 
+// On récupére les variables qu'on a besoin dans le html
 const section = document.querySelector("#products")
 const modal = document.querySelector("#modal-p")
 const tbody = document.querySelector("tbody")
@@ -25,7 +27,6 @@ label.append(i)
 const pricet = document.createElement("p")
 modalp.append(pricet)
 pricet.price = 0;
-
 
 const fp = document.querySelector(".frais-p")
 const pricefp = document.createElement("p")
@@ -102,7 +103,6 @@ function createtable(product){
     qtite.name = "quantity"
     qtite.min = "1"
     qtite.value = 1
-
     quantité.append(qtite)
 
     const tdtrash = document.createElement("td")
@@ -112,7 +112,6 @@ function createtable(product){
     trash.value = "Supp"
     trash.setAttribute('onClick', `deleteProduct(${product.id})`)
     tdtrash.append(trash)
-    // imgtrash.setAttribute("click",deleteProduct(btn) )
 
 }
 
@@ -152,7 +151,7 @@ function deleteProduct(id){
 }
 
 // // Caculer la quantité 
-// function calcquantity(product){
+// function calcquantity(){
 
 //     pricet = (price * qtite);
 //     console.log(price);
